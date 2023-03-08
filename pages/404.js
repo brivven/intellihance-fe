@@ -1,8 +1,10 @@
+
 import { Box ,Flex, useColorModeValue, Image} from "@chakra-ui/react"
 import Head from 'next/head'
 
 export default function Custom404() {
-  const PageBg = useColorModeValue('gray.50' , 'gray.700');
+
+  const PageBg = useColorModeValue('white' , 'gray.700');
 
     return(
       <> 
