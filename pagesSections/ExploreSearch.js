@@ -21,7 +21,6 @@ function ExploreSearch() {
     const Router = useRouter();
 
     const VerifyKeyDown = (ev)=>{
-      alert(ev.key);
       if(ev.key == 'Enter'){
         SearchKeyword();
       }
