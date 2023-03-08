@@ -29,17 +29,19 @@ function AboutUs() {
       >
 
         <Flex w={{base:"100%", sm:"100%", md:"280px" }} h={{base:"fit-content", sm:"fit-content", md:"100vh" }} align={'center'} 
-          background={bgColor} 
-          direction={{base:"row", sm:"row", md:"column" }} gap='40px' py={"50px"} wrap='wrap' px={{base:"20px", sm:"20px", md:"none" }}
+          background={bgColor} justify={{base:"flex-start", sm:"flex-start", md:"center" }}
+          direction={{base:"row", sm:"row", md:"column" }} gap={{base:"10px", sm:"20px", md:"40px" }} 
+          py={{base:"25px", sm:"40px", md:"50px" }} wrap='wrap' px={{base:"20px", sm:"20px", md:"none" }}
         >
-            {titles.map((navItem , index) => (
-                <Text key={index} fontSize={'14px'} w={{base:"fit-content", sm:"fit-content", md:"65%" }} fontWeight={500} cursor='pointer' _hover={{color:'#39C7C4'}} 
-                  transitionDuration='0.2s' mx='auto' 
-                  className="animate__animated animate__fadeInUp"  style={{animationDelay: index * 100+'ms' }} textAlign='left' 
-                  color={activeTitle == navItem ? '#39C7C4' : textColor} onClick={()=> setactiveTitle(navItem)}
-                >{navItem}
-                </Text>
-            ))}
+          {titles.map((navItem , index) => (
+            <Text key={index} fontSize={'14px'} w={{base:"fit-content", sm:"fit-content", md:"65%" }} fontWeight={500} cursor='pointer' _hover={{color:'#39C7C4'}} 
+              transitionDuration='0.2s' mx='auto' 
+              className="animate__animated animate__fadeInUp"  style={{animationDelay: index * 100+'ms' }} textAlign='left' 
+              color={activeTitle == navItem ? '#39C7C4' : textColor} onClick={()=> setactiveTitle(navItem)}
+            >
+              {navItem}
+            </Text>
+          ))}
 
         </Flex>
 

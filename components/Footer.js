@@ -51,7 +51,7 @@ function Footer() {
           align={'center'} justify='center' gap='15px' direction={{base:"column", sm:"row", md:"row", lg:'row' }}
         > 
 
-          <FormControl isInvalid={falseEmail} position='relative' w='85%' borderRadius='15px'  > 
+          <FormControl isInvalid={falseEmail} position='relative' w={{base:"90%", sm:"85%" }} borderRadius='15px'  > 
           <InputGroup border={'transparent'} w='100%' >
             <InputRightElement pointerEvents='none' color='white' fontSize={{base:"12px", sm:"14px", md:"16px" }} children={<BsEnvelopeFill />} borderRadius='15px'  />
             <Input 
@@ -68,7 +68,7 @@ function Footer() {
           </InputGroup>
           </FormControl>
 
-          <Button bgColor={'white '} borderRadius='15px' fontSize={{base:"11px", sm:"12px", md:"14px" }} 
+          <Button bgColor={'white '} borderRadius='15px' fontSize={{base:"13px", sm:"14px", md:"15px" }} 
             fontWeight={600} _hover={{opacity:'0.75'}} px={"18px"} h='34px' color={'gray.900'}  
             _active={{opacity:'0.5'}} boxShadow='md' onClick={Subscribe}
           >
@@ -90,42 +90,42 @@ function Footer() {
             <Image src="/intellihance.png" alt="Vercel Logo" h='28px' />
           </Flex>
           <Text fontFamily='Chewy' letterSpacing={'1px'} px={1} bgColor="transparent" color='#39C7C4'
-            fontSize={{base:"18px", sm:"20px", md:"22px" }} fontWeight={500} 
+            fontSize={{base:"20px", sm:"20px", md:"22px" }} fontWeight={500} 
           > 
             Intellihance 
           </Text>
         </Flex>
         
         <Stack w='fit-content' direction='column' pb={5} align='center' >
-          <Text fontSize={{base:"13px", sm:"14px", md:"16px" }}  w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>Contact us</Text>
+          <Text fontSize={{base:"14px", sm:"15px", md:"16px" }}  w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>Contact us</Text>
           <Flex fontSize={{base:"13px", sm:"14px", md:"16px" }}  direction='row' align={'center'} >
             <BsTelephoneFill color='#39C7C4' />
-            <Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  marginLeft={1.5} color='gray.300'> +212-456-7890 </Text>
+            <Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  marginLeft={1.5} color='gray.300'> +212-456-7890 </Text>
           </Flex>
           <Flex fontSize={{base:"13px", sm:"14px", md:"16px" }}  direction='row' align={'center'} >
             <AiTwotoneMail color='#39C7C4' /> 
-            <Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  marginLeft={1.5} color='gray.300'>Intellihance_co@gmail.com</Text>
+            <Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  marginLeft={1.5} color='gray.300'>Intellihance_co@gmail.com</Text>
           </Flex>
           <Flex fontSize={{base:"13px", sm:"14px", md:"16px" }}  direction='row' align={'center'} > 
             <MdLocationOn color='#39C7C4' /> 
-            <Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  marginLeft={1.5} color='gray.300'>8162 Thorne Rd. Grove City, OH 43123</Text>
+            <Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  marginLeft={1.5} color='gray.300'>8162 Thorne Rd. Grove City, OH 43123</Text>
           </Flex>
         </Stack>
 
         <Stack w='fit-content' direction='column' pb={5} align='center'  >
-          <Text fontSize={{base:"13px", sm:"14px", md:"16px" }} w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>About us</Text>
-          <Text fontSize={{base:"11px", sm:"12px", md:"14px" }} color='gray.300' maxWidth={{base:'280px', sm:'300px', md:'350px'}} textAlign='center' lineHeight='23px' >
+          <Text fontSize={{base:"14px", sm:"15px", md:"16px" }} w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>About us</Text>
+          <Text fontSize={{base:"13px", sm:"14px", md:"15px" }} color='gray.300' maxWidth={{base:'280px', sm:'300px', md:'350px'}} textAlign='center' lineHeight='23px' >
             Established in 2020,
             We strive to keep our blog informative and interesting, so check back often for the latest news and insights! 
           </Text>
         </Stack>
 
         <Stack w='fit-content' direction='column' pb={5} align='center' >
-          <Text fontSize={{base:"13px", sm:"14px", md:"16px" }}  w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>Discover</Text>
-          <Link href='explore' ><Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Latest articles</Text></Link>
-          <Link href='about-us' ><Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Privacy policy</Text></Link>
-          <Link href='about-us' ><Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Terms of service</Text></Link>
-          <Link href='about-us' ><Text fontSize={{base:"11px", sm:"12px", md:"14px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Corporate culture</Text></Link>
+          <Text fontSize={{base:"14px", sm:"15px", md:"16px" }}  w='fit-content' mb={2} fontWeight={600} color='white' className='title-underline'>Discover</Text>
+          <Link href='explore' ><Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Latest articles</Text></Link>
+          <Link href='about-us' ><Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Privacy policy</Text></Link>
+          <Link href='about-us' ><Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Terms of service</Text></Link>
+          <Link href='about-us' ><Text fontSize={{base:"13px", sm:"14px", md:"15px" }}  _hover={{textDecoration:'underline'}} color='gray.300'>Corporate culture</Text></Link>
         </Stack>
 
       </Stack>

@@ -56,7 +56,7 @@ function Navbar() {
       h={{base:'65px', sm:'70px', md:'90px' }}
       flexDirection="row"
       px={{base:'10px', sm:'15px' ,md:'30px',lg:"40px", xl: "50px"}}  
-      boxShadow='md'
+      boxShadow='lg'
       boxSizing="border-box"
       color="black"
       zIndex={1000}
