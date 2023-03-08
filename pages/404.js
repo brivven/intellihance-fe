@@ -2,14 +2,14 @@ import { Box ,Flex, useColorModeValue, Image} from "@chakra-ui/react"
 import Head from 'next/head'
 
 export default function Custom404() {
-  const PageBg = useColorModeValue('#FBF9FD' , '#2b3242');
+  const PageBg = useColorModeValue('gray.50' , 'gray.700');
 
     return(
       <> 
       <Head>
         <title>Page not found</title>
       </Head>
-      <Flex h={"90vh"} w="100%" background={'linear-gradient( to top, #1A202C, #2D3748)'}
+      <Flex h={"90vh"} w="100%" background={PageBg}
          align='center' justify={'center'}  pb='100px'
       >
         <Box>

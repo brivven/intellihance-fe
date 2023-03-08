@@ -133,10 +133,8 @@ export async function getServerSideProps ( {params:{slug}} ) {
       }
     }
   } catch (error) {
-    return{
-      props:{
-        articleData: null
-      }
+    return {
+      notFound: true,
     }
   }
 }
