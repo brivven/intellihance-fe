@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { useState, useEffect } from 'react';
 import {Box } from '@chakra-ui/react';
 import HomeSection1 from '../pagesSections/HomeSection1';
 import HomeSection2 from '../pagesSections/HomeSection2';
@@ -11,6 +12,15 @@ import HomeSection6 from '../pagesSections/HomeSection6';
 
 export default function Home() {
   
+
+  const [waitAsec, setwaitAsec] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setwaitAsec(true)
+    }, 1500);
+  }, [])
+  
+
   
   return (
     <>
@@ -21,10 +31,10 @@ export default function Home() {
       <Box h='fit-content' w='100%' bgColor='transparent' position={'relative'} >
         <HomeSection1 />
         <HomeSection2 />
-        <HomeSection4 />
-        <HomeSection5 />
-        <HomeSection3 />
-        <HomeSection6 />
+        {waitAsec ? <HomeSection4 /> : null }
+        {waitAsec ? <HomeSection5 /> : null }
+        {waitAsec ? <HomeSection3 /> : null }
+        {waitAsec ? <HomeSection6 /> : null }
       </Box>
       
     </>

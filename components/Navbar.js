@@ -108,7 +108,7 @@ function Navbar() {
 
 
 
-      <Stack display={{base:"flex", sm:"flex", md:"flex", lg:"none", xl: "none"}} flex='1 0' ml='5px' >
+      <Stack display={{base:"flex", sm:"flex", md:"flex", lg:"none", xl: "none"}} flex='1 0' ml='3px' >
         <Flex align={'center'} justify='flex-start' _hover={{bgColor:hover, color: "#39C7C4"}} color={textColor} 
           ref={DrawerBtnRef} p={{base:1, sm:1, md:1.5}} w='fit-content'  borderRadius='5px' transitionDuration='0.3s' ml={{base:"0px", sm:"8px", md:"8px" }}
         >
@@ -120,7 +120,7 @@ function Navbar() {
 
   
 
-      <Stack color={textColor} spacing={{base:2, sm:2, md:3 }} direction={'row'} align='center' className="animate__animated animate__fadeInDown" 
+      <Stack color={textColor} spacing={{base:1, sm:2, md:3 }} direction={'row'} align='center' className="animate__animated animate__fadeInDown" 
         style={{animationDelay: '500ms' }} 
       >
         {colorMode == 'light' ?
