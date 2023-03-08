@@ -11,7 +11,7 @@ function HomeSection1() {
   useEffect(() => {
     setTimeout(() => {
       setWaitAminute(true)
-    }, 1500);
+    }, 750);
   }, [])
 
   const bgColor = useColorModeValue('gray.200', 'gray.800');
