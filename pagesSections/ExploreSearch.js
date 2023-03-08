@@ -26,7 +26,7 @@ function ExploreSearch() {
         SearchKeyword();
       }
       else{
-        return
+        return;
       }
     }
     const SearchKeyword = () =>{
