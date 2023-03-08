@@ -46,7 +46,7 @@ function ReviewForm({articleID, closeForm}) {
     useEffect(() => {
       if( Object.keys(FormErrors).length == 0 && FormSubmitted ){
         setFormLoading(true);
-        axios.post('http://localhost:3001/Articles/AddReview' , {
+        axios.post('https://intellihance-be.vercel.app/Articles/AddReview' , {
           articleID: articleID,
           name: FormValues.name,
           message: FormValues.message,

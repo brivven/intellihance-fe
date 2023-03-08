@@ -45,7 +45,7 @@ function Explore({Articles}) {
       }
       else{
         setLoadMore(true);
-        axios.get('http://localhost:3001/Articles' , { params:{
+        axios.get('https://intellihance-be.vercel.app/Articles' , { params:{
         category: router.query.category || 'All',
         skip: Articles.length,
         orderBy: router.query.orderBy || undefined,
