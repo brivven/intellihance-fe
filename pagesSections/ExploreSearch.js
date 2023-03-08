@@ -55,7 +55,7 @@ function ExploreSearch() {
             children={<RiSearch2Line cursor={'pointer'} />} onClick={SearchKeyword}
           />
           <Input 
-            type='text' 
+            type='search' 
             borderRadius='15px' 
             placeholder='Search articles..'
             name='Name'
@@ -64,6 +64,7 @@ function ExploreSearch() {
             value={SearchKeywordValue}   
             onChange={(ev)=> setSearchKeywordValue(ev.target.value)} 
             onKeyDown={VerifyKeyDown}   
+            enterkeyhint="send"
           />
         </InputGroup>  
 
