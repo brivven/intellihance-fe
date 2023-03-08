@@ -39,7 +39,7 @@ function HomeSection3() {
         </Box>
 
 
-        <Flex w={{base:"95%", sm:"85%", md:"75%" }} flex='none' mx='auto' justify='center' bgColor={'transparent'} align={'center'} 
+        <Flex w={{base:"100%", sm:"85%", md:"75%" }} flex='none' mx='auto' justify='center' bgColor={'transparent'} align={'center'} 
           boxSizing='border-box' overflow={'hidden'} position='relative' 
         >
           <Carousel responsive={responsive} containerClass="carousel-container" infinite={true} dotListClass="custom-dot-list-style"

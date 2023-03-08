@@ -53,9 +53,9 @@ function Navbar() {
       align="center"
       justify="space-between"
       w="100%"
-      h={{base:'60px', sm:'70px', md:'90px' }}
+      h={{base:'65px', sm:'70px', md:'90px' }}
       flexDirection="row"
-      px={{base:'15px', sm:'15px' ,md:'30px',lg:"40px", xl: "50px"}}  
+      px={{base:'10px', sm:'15px' ,md:'30px',lg:"40px", xl: "50px"}}  
       boxShadow='md'
       boxSizing="border-box"
       color="black"
@@ -73,12 +73,12 @@ function Navbar() {
       <Link href="/" >
         <Flex width="fit-content" align="center" justify={'center'}  bgColor="transparent" >
           <Flex bgColor="transparent" align="center" justify={'center'} flexDirection='row' h='fit-content' >
-            <Image src={colorMode == 'light' ? "/intellihanceb.png" : "/intellihanceb&w.png"}  alt="intellihance Logo" h={{base:"22px", sm:"28px", md:"32px" }} 
+            <Image src={colorMode == 'light' ? "/intellihanceb.png" : "/intellihanceb&w.png"}  alt="intellihance Logo" h={{base:"24px", sm:"28px", md:"32px" }} 
               className="animate__animated animate__fadeInDown" style={{animationDelay: '100ms' }}
             />
           </Flex>
           <Text fontFamily='Chewy' letterSpacing={'1px'} px={1} bgColor="transparent" className="animate__animated animate__fadeInDown"
-            fontSize={{base:"16px", sm:"22px", md:"24px" }} color={textColor} fontWeight={500} style={{animationDelay: '100ms' }}
+            fontSize={{base:"20px", sm:"22px", md:"24px" }} color={textColor} fontWeight={500} style={{animationDelay: '100ms' }}
           > 
             Intellihance 
           </Text>
@@ -108,11 +108,11 @@ function Navbar() {
 
 
 
-      <Stack display={{base:"flex", sm:"flex", md:"flex", lg:"none", xl: "none"}} flex='1 0' >
+      <Stack display={{base:"flex", sm:"flex", md:"flex", lg:"none", xl: "none"}} flex='1 0' ml='5px' >
         <Flex align={'center'} justify='flex-start' _hover={{bgColor:hover, color: "#39C7C4"}} color={textColor} 
           ref={DrawerBtnRef} p={{base:1, sm:1, md:1.5}} w='fit-content'  borderRadius='5px' transitionDuration='0.3s' ml={{base:"0px", sm:"8px", md:"8px" }}
         >
-          <Icon as={TfiMenu} fontSize={{base:"14px", sm:"16px", md:"18px" }}  className="animate__animated animate__fadeInDown"
+          <Icon as={TfiMenu} fontSize={{base:"18px", sm:"20px", md:"22px" }}  className="animate__animated animate__fadeInDown"
             style={{animationDelay: '300ms' }}   onClick={onOpen} borderRadius='5px' cursor='pointer' 
           />
         </Flex>
@@ -120,7 +120,7 @@ function Navbar() {
 
   
 
-      <Stack color={textColor} spacing={{base:1, sm:2, md:3 }} direction={'row'} align='center' className="animate__animated animate__fadeInDown" 
+      <Stack color={textColor} spacing={{base:2, sm:2, md:3 }} direction={'row'} align='center' className="animate__animated animate__fadeInDown" 
         style={{animationDelay: '500ms' }} 
       >
         {colorMode == 'light' ?
@@ -128,7 +128,7 @@ function Navbar() {
           <Flex align={'center'} justify='center' _hover={{bgColor:hover, color: "#39C7C4"}} borderRadius='5px' cursor='pointer' p={{base:1, sm:1, md:1.5}} 
             transitionDuration='0.2s' onClick={toggleColorMode} 
           >
-            <Icon as={FaRegMoon} fontSize={{base:"14px", sm:"16px", md:"18px" }}  className="animate__animated animate__fadeIn"
+            <Icon as={FaRegMoon} fontSize={{base:"16px", sm:"18px", md:"20px" }}  className="animate__animated animate__fadeIn"
             />
           </Flex>
         </Tooltip>
@@ -138,7 +138,7 @@ function Navbar() {
           <Flex align={'center'} justify='center' _hover={{bgColor:hover, color: "#39C7C4"}} borderRadius='5px' transitionDuration='0.2s' 
             cursor='pointer' p={{base:1, sm:1, md:1.5}} onClick={toggleColorMode} 
           >
-            <Icon as={FiSun} fontSize={{base:"14px", sm:"16px", md:"18px" }}  className="animate__animated animate__fadeIn"
+            <Icon as={FiSun} fontSize={{base:"16px", sm:"18px", md:"20px" }}  className="animate__animated animate__fadeIn"
             />
           </Flex>
         </Tooltip>
@@ -149,7 +149,7 @@ function Navbar() {
             <Flex align={'center'} justify='center'  _hover={{bgColor:hover, color: "#39C7C4"}} transitionDuration='0.2s' borderRadius='5px' 
               p={{base:1, sm:1, md:1.5}} cursor='pointer' 
             >
-              <Icon as={FiSearch} fontSize={{base:"14px", sm:"16px", md:"18px" }}  />
+              <Icon as={FiSearch} fontSize={{base:"16px", sm:"18px", md:"20px" }}  />
             </Flex>
           </Link>
         </Tooltip>
