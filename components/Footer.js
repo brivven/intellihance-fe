@@ -55,7 +55,7 @@ function Footer() {
           <InputGroup border={'transparent'} w='100%' >
             <InputRightElement pointerEvents='none' color='white' fontSize={{base:"12px", sm:"14px", md:"16px" }} children={<BsEnvelopeFill />} borderRadius='15px'  />
             <Input 
-              type='text' 
+              type='search' 
               value={email}
               borderRadius='15px' 
               placeholder='Enter your email'
