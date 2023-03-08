@@ -28,13 +28,13 @@ function AboutUs() {
       <Flex h='fit-content' bgColor={'transparent'} w='100%' boxSizing='border-box' direction={{base:"column", sm:"column", md:"row" }}
       >
 
-        <Flex w={{base:"100%", sm:"100%", md:"280px" }} h={{base:"fit-content", sm:"fit-content", md:"100vh" }} align={'center'} 
+        <Flex w={{base:"100%", sm:"100%", md:"280px" }} h={{base:"fit-content", sm:"fit-content", md:"100vh" }} align={{base:"flex-start", sm:"flex-start", md:"center" }}
           background={bgColor} justify={{base:"flex-start", sm:"flex-start", md:"center" }}
           direction={{base:"row", sm:"row", md:"column" }} gap={{base:"10px", sm:"20px", md:"40px" }} 
-          py={{base:"25px", sm:"40px", md:"50px" }} wrap='wrap' px={{base:"20px", sm:"20px", md:"none" }}
+          py={{base:"30px", sm:"40px", md:"50px" }} wrap='wrap' px={{base:"20px", sm:"20px", md:"none" }}
         >
           {titles.map((navItem , index) => (
-            <Text key={index} fontSize={'14px'} w={{base:"fit-content", sm:"fit-content", md:"65%" }} fontWeight={500} cursor='pointer' _hover={{color:'#39C7C4'}} 
+            <Text key={index} fontSize={'14px'} w={{base:"fit-content", sm:"fit-content", md:"65%" }} fontWeight={700} cursor='pointer' _hover={{color:'#39C7C4'}} 
               transitionDuration='0.2s' mx='auto' 
               className="animate__animated animate__fadeInUp"  style={{animationDelay: index * 100+'ms' }} textAlign='left' 
               color={activeTitle == navItem ? '#39C7C4' : textColor} onClick={()=> setactiveTitle(navItem)}

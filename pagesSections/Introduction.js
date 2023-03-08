@@ -9,7 +9,7 @@ export default function Introduction() {
   const textColor2 = useColorModeValue('gray.700', 'white');
 
   const Introduction = [
-    'Welcome to our blog! We are a trusted source of information and inspiration for our dedicated fan base. Our blog has been providing high-quality content for [insert number of years] years, and our commitment to excellence has earned us a reputation as a credible and reliable source for every possible topic.',
+    'Welcome to our website! We are a trusted source of information and inspiration for our dedicated fan base. Our blog has been providing high-quality content for [insert number of years] years, and our commitment to excellence has earned us a reputation as a credible and reliable source for every possible topic.',
     'We take pride in our ability to provide insightful and informative content that is based on in-depth research and analysis. Our team of experienced writers, editors, and subject matter experts work tirelessly to bring you the latest news, trends, and insights in every category.',
     'Whether youre a seasoned expert or a curious newcomer, our blog is the perfect destination for anyone looking to expand their knowledge and stay up-to-date on the latest developments in every possible topic. So why not join our community of passionate readers today and start exploring the exciting world of every topic with us!',
   ];

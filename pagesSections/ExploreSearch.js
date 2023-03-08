@@ -21,7 +21,7 @@ function ExploreSearch() {
     const Router = useRouter();
 
     const VerifyKeyDown = (ev)=>{
-      if(ev.key === 'Enter'){
+      if(ev.key == 'Enter'){
         SearchKeyword();
       }
       else{
@@ -62,8 +62,7 @@ function ExploreSearch() {
             bgColor={inputBg}
             value={SearchKeywordValue}   
             onChange={(ev)=> setSearchKeywordValue(ev.target.value)} 
-            /* onKeyDown={VerifyKeyDown}  */
-            onKeyPress={VerifyKeyDown}  
+            onKeyDown={VerifyKeyDown}   
           />
         </InputGroup>  
 
