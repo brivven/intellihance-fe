@@ -19,7 +19,7 @@ function ArticleDetailsShare({articleData}) {
       { icon: FaLinkedinIn, color: '#0077b5' },
     ];
 
-    const shareUrl = `http://localhost:3000/explore/${articleData[0]?.titleSlug}`;
+    const shareUrl = `https://intellihance.vercel.app/explore/${articleData[0]?.titleSlug}`;
 
 
   return (
