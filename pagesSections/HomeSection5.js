@@ -47,7 +47,7 @@ function HomeSection5() {
 
         <Flex w='100%' mx='auto' py='20px' boxSizing='border-box' position='relative' h='fit-content' align={'center'} justify='center' 
           direction={{base:"column", sm:"column", md:"column", lg:'column', xl:'row' }} 
-          gap={{base:"60px", sm:"80px", md:"80px", lg:'80px', xl:'100px', '2xl':'120px' }} 
+          gap={{base:"40px", sm:"80px", md:"80px", lg:'80px', xl:'100px', '2xl':'120px' }} 
         >
 
           <Fade delay={100} left> 
@@ -58,7 +58,7 @@ function HomeSection5() {
           <Flex w='fit-content' h='100%' direction={'column'} align={'center'} justify='center'>
 
             <Flex w={{base:"90%", sm:"90%", md:"600px", lg:'700px', xl:'500px', '2xl':'600px' }} h='100px' 
-              align={'center'} justify='center' gap={{base:'10px', sm:'15px', md:'20px'}}
+              align={'center'} justify='center' gap={{base:'15px', sm:'20px', md:'25px'}}
             > 
               {Reviews.map((rev, index)=>(
               <Box key={index} w={{base:'40px', sm:'50px', md:'60px'}} h={{base:'40px', sm:'50px', md:'60px'}}

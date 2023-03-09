@@ -49,7 +49,7 @@ function ArticleBox({size, image,title, category, delay, rating, reactions, date
             <Text w='90%' color='white' textAlign={'left'} fontWeight={600} my='10px'
               fontSize={size == 'lg' ? {base:'16px', sm:'16px', md:'18px', lg:'20px', xl:'22px'} 
                       : size == 'md' ? {base:'14px', sm:'14px', md:'16px', lg:'18px', xl:'20px'}  
-                      : {base:'12px', sm:'12px', md:'12px', lg:'14px', xl:'18px'} } 
+                      : {base:'13px', sm:'13px', md:'14px', lg:'16px', xl:'18px'} } 
               className='animate__animated animate__fadeInUp' style={{animationDelay: (delay+2)+'s' }}
             >
               {title}
@@ -61,7 +61,7 @@ function ArticleBox({size, image,title, category, delay, rating, reactions, date
 
               <Flex  align={'center'} justify='center' fontWeight={600}>
                 <Icon as={BsClockFill} fontSize={{base:"12px", sm:"14px", md:"16px" }} color='#39C7C4' mr={"6px"} />
-                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.300' >{date}</Text>            
+                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.50' >{date}</Text>            
               </Flex> 
 
               <Center height='10px' mx='5px'>
@@ -70,7 +70,7 @@ function ArticleBox({size, image,title, category, delay, rating, reactions, date
 
               <Flex align={'center'} justify='center' fontWeight={600}>
                 <Icon as={BsStarFill} fontSize={{base:"12px", sm:"14px", md:"16px" }} color={'#39C7C4'} mr={"6px"} />
-                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.300' >{rating}</Text>
+                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.50' >{rating}</Text>
               </Flex>
 
               <Center height='10px' mx='5px'>
@@ -79,7 +79,7 @@ function ArticleBox({size, image,title, category, delay, rating, reactions, date
 
               <Flex align={'center'} justify='center' fontWeight={600}>
                 <Icon as={BsEmojiSunglassesFill} fontSize={{base:"12px", sm:"14px", md:"16px" }} color='#39C7C4' mr={"6px"} />
-                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.300' >{reactions}</Text>
+                <Text fontSize={{base:'11px', sm:'12px', md:'14px'}} color='gray.50' >{reactions}</Text>
               </Flex>
 
             </Flex>
