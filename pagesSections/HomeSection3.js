@@ -48,7 +48,7 @@ function HomeSection3() {
 
             {faces.map((person , index)=>(
             <Fade key={index} > 
-              <Flex key={index} w={{base:"260px", sm:"270px", md:"280px" }} h='245px' mx='auto' bgColor={'transparent'} align={'center'} justify='center' direction={'column'} 
+              <Flex key={index} w={{base:"270px", sm:"275px", md:"280px" }} h='245px' mx='auto' bgColor={'transparent'} align={'center'} justify='center' direction={'column'} 
                 overflow='hidden' flexShrink={0}  position='relative' transform={'skew(-10deg)'} cursor='pointer' borderRadius='15px'
               >
                 <Image src={person.src} h='100%' w='100%' transform={'skew(10deg) scale(1.2)'} />

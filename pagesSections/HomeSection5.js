@@ -57,12 +57,6 @@ function HomeSection5() {
           <Fade delay={350} right> 
           <Flex w='fit-content' h='100%' direction={'column'} align={'center'} justify='center'>
 
-            {ReviewsContent.map((review,i)=>(
-              <ReviewBox key={i} display={review.revNbr == activeReview ? 'flex' : 'none'} avatar={review.avatar} text={review.text} 
-                reader={review.reader} reaction={review.reaction} 
-              />
-            ))}
-
             <Flex w={{base:"90%", sm:"90%", md:"600px", lg:'700px', xl:'500px', '2xl':'600px' }} h='100px' 
               align={'center'} justify='center' gap={{base:'10px', sm:'15px', md:'20px'}}
             > 
@@ -77,6 +71,12 @@ function HomeSection5() {
               </Box>
               ))}            
             </Flex>
+
+            {ReviewsContent.map((review,i)=>(
+              <ReviewBox key={i} display={review.revNbr == activeReview ? 'flex' : 'none'} avatar={review.avatar} text={review.text} 
+                reader={review.reader} reaction={review.reaction} 
+              />
+            ))}
 
           </Flex>
           </Fade>
